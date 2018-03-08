@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.albin.forgetmenot.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="6dp"
+        android:elevation="17dp"
+        fab:fab_addButtonColorNormal="@color/colorAccent"
+        fab:fab_addButtonColorPressed="@color/colorAccent"
+        fab:fab_addButtonPlusIconColor="@color/colorText"
+        fab:fab_addButtonStrokeVisible="false"
+        fab:fab_icon="@drawable/ic_add_white_18dp"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:elevation="17dp"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_icon="@drawable/calendar_add"
+            fab:fab_size="mini"
+            fab:fab_title="Ny timer" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_reminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:elevation="17dp"
+            fab:fab_colorNormal="@color/colorAccent"
+            fab:fab_icon="@drawable/ic_alarm_add_white_18dp"
+            fab:fab_plusIconColor="@color/colorPrimary"
+            fab:fab_size="mini"
+            fab:fab_title="Ny påminelse" />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <com.example.albin.forgetmenot.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout><!--<ListView--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_alignParentStart="true"--><!--android:id="@+id/listview"--><!--android:layout_below="@+id/appBarLayout" />-->

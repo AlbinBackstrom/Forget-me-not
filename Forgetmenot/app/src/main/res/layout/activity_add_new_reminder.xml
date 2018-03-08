@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_new_reminder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.albin.forgetmenot.AddNewReminder">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_new_reminder"
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:elevation="24dp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appBarLayout">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom">
+
+            <EditText
+                android:id="@+id/etReminderTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rubrik"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/til"
+            android:background="@drawable/border_bottom">
+
+            <EditText
+                android:id="@+id/etReminderContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meddelande"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/dateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="dateLayoutClick"
+            android:orientation="vertical"
+            android:background="@drawable/border_bottom"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datum"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <TextView
+                android:id="@+id/tvReminderDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ett datum" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="timeLayoutClick"
+            android:orientation="vertical"
+            android:background="@drawable/border_bottom"
+            android:padding="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tid"
+                android:textAppearance="@android:style/TextAppearance.Material.Title" />
+
+            <TextView
+                android:id="@+id/tvReminderTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En tid" />
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:elevation="24dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_done_white_18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_marginRight="16dp" />
+
+</android.support.design.widget.CoordinatorLayout>

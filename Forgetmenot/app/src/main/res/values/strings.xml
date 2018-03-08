@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Forget me not</string>
+    <string name="action_settings">settings</string>
+    <string name="sort">sort</string>
+</resources>
