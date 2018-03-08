@@ -2,7 +2,7 @@
 
 En androidapp som hjälper till att hålla ordning på saker med hjälp av timers/nedräkningar och datumbaserade påminnelser.
 
-
+[Mockups och printscreens](https://github.com/AlbinBackstrom/Forget-me-not/blob/master/README.md#mockups-och-print-screens)  
 
 ### Technical features 
 Data från användare spara i en SQLitedatabas och två olika tabeller utan samband, dessa två tabeller innehåller likvärdigt information och borde ha sparats i samma tabell. Men på grund av det valda designmönstret och utformningen på listview visade det sig vara väldigt svårt och komplicerat att skilja denna data åt och presentera den på ett tillfredsställande sätt. Eftersom layouten till timer och påminnelserna skiljer sig ifrån varandra gällande innehåll och ikoner så visas dessa två inte på samma aktivitet. Istället används två fragment som lever i samma aktivitet, i den ena visas alla påminnelser och i den andra visas alla timers.
@@ -51,110 +51,3 @@ Nedan följer print-screens på appens alla skärmbilder i den ordning som anvä
 #### Mockups
 ![Övergripande bild](https://i.imgur.com/OWYPwTA.png)
 ![Ny påmineles mockup](https://i.imgur.com/e6i7qoc.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Lägg till ny påminnelse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
