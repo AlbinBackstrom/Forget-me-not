@@ -33,13 +33,24 @@ Om användaren befinner sig på en plats kan han spara den aktuella platsen för
 En annan idé som skulle vara intressant att implementera vore att göra en funktion där användaren kan lägga till en påminnelse enbart via en rad text. Till exempel om användaren skriver i en inputruta “Tvätt, 18:30” så skapas en påminnelse vid nästa gång som 18:30 är. Eller “Tvätttid, på fredag 17:00”, eller “köp mjölk, Ica”  där den sista är är platsbaserad och ica är en favorit som är tillagd tidigare. 
 
 
-Nedan följer print-screens på appens alla skärmbilder i den ordning som användaren troligtvis upplever. Den första visar hur man lägger till en timer, den andra hur en påminnelse läggs till och i slutet visas tre stycken wireframes som gjordes innan projektet påbörjades.
 
 
 
+## Mockups och print screens
+
+Nedan följer print-screens på appens alla skärmbilder i den ordning som användaren troligtvis upplever. Den första visar hur man lägger till en timer, den andra hur en påminnelse läggs till och i slutet visas två stycken mockups som gjordes innan projektet påbörjades.
+
+#### Ny timer/nedräkning
+![Ny timer](https://i.imgur.com/qED6OtB.png)  
 
 
+#### Ny påminelse
+![Ny påminelse](https://i.imgur.com/at81vo0.png)
 
+
+#### Mockups
+![Övergripande bild](https://i.imgur.com/OWYPwTA.png)
+![Ny påmineles mockup](https://i.imgur.com/e6i7qoc.png)
 
 
 
